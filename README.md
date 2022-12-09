@@ -24,3 +24,5 @@ Será requisitado um password, que poderá ser encontrado nos logs da aplicaçã
 ![image](https://user-images.githubusercontent.com/80921933/206808338-d3a9c377-b59f-4080-9ec5-be1a08584843.png)
 
 Na tela posterior, instalamos os plugins sugeridos.
+
+Depois, criamos um usuário, até chegarmos na página principal.
