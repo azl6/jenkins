@@ -75,6 +75,7 @@ Agora, ao rodar o projeto novamente, somos obrigados a fornecer os parâmetros p
 
 ![image](https://user-images.githubusercontent.com/80921933/206818062-d83f6a97-9239-4c56-9d73-fd7e54c9d656.png)
 
+Podemos criar parâmetros do tipo **list**, **boolean**, etc...
 
 
 
