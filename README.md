@@ -61,6 +61,20 @@ O output será o esperado:
 
 ![image](https://user-images.githubusercontent.com/80921933/206815247-0a248095-e90c-46f4-b7b3-09cc482c2b6a.png)
 
+# Inserindo parâmetros nos comandos
+
+Na aba **Dashboard > \<PROJECT> > General**, podemos dizer que o projeto é parametrizado, e informar o nome da variável e seu respectivo valor padrão
+
+![image](https://user-images.githubusercontent.com/80921933/206817946-0de526d5-a9f3-491e-91d1-fa5e3e98bbb8.png)
+
+Alterando novamente o código do **Build Steps**
+
+![image](https://user-images.githubusercontent.com/80921933/206818034-d3f2ee19-7f40-4ea6-9a8f-1254db1ffe67.png)
+
+Agora, ao rodar o projeto novamente, somos obrigados a fornecer os parâmetros para rodar o projeto
+
+![image](https://user-images.githubusercontent.com/80921933/206818062-d83f6a97-9239-4c56-9d73-fd7e54c9d656.png)
+
 
 
 
