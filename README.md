@@ -27,7 +27,7 @@ Na tela posterior, instalamos os plugins sugeridos.
 
 Depois, criamos um usuário, até chegarmos na página principal.
 
-## Criando um job
+## Criando um job no Jenkins
 
 Na página principal, podemos clicar em **Create a job**.
 
@@ -46,6 +46,21 @@ Depois, na tela do job criado, podemos clicar em **Build Now** e o job será exe
 Podemos clicar em cada execução para visualizar o output do comando
 
 ![image](https://user-images.githubusercontent.com/80921933/206812428-2362d364-2751-4156-8cd1-b69836145df8.png)
+
+# Executando scripts pelo Jenkins
+
+Podemos criar o script localmente e enviar para dentro do contêiner com o comando **docker cp \<FILE> \<CONTAINER>:\<CHOSEN_PATH>**
+
+![image](https://user-images.githubusercontent.com/80921933/206814901-6a8abbd9-e34f-470e-a25b-be00d9545fbe.png)
+
+Depois, alteramos os **Build Steps** para rodar o script que se encontra no diretório **/**
+
+![image](https://user-images.githubusercontent.com/80921933/206815051-7c057907-ddf0-4fb3-82db-ba5648914ccf.png)
+
+O output será o esperado:
+
+![image](https://user-images.githubusercontent.com/80921933/206815247-0a248095-e90c-46f4-b7b3-09cc482c2b6a.png)
+
 
 
 
