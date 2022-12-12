@@ -127,10 +127,37 @@ Basta selecionarmos o host criado e colocar o script normalmente na caixa de tex
  
 ![image](https://user-images.githubusercontent.com/80921933/206938544-f1be1674-2888-4374-b7f7-2453d83f69ec.png)
 
-- Fazer o upload do dump para o S3 manualmente
+- Fazer o upload do dump para o S3 manualmente com o seguinte comando
+
+![image](https://user-images.githubusercontent.com/80921933/206956336-cdb5d33f-c042-4963-b946-6e3fa28d6038.png)
+
 - Automatizar o backup com shell script
 
 ... CONTINUA AULA 38
+
+# Gerenciando secrets pelo Jenkins
+
+Em **Manage Credentials**
+
+![image](https://user-images.githubusercontent.com/80921933/206957608-44fbc93c-a04e-4097-9f6f-dcfe85446190.png)
+
+Clicamos em **System**
+
+![image](https://user-images.githubusercontent.com/80921933/206957720-acb6e58c-ba84-44b0-ac16-588122e975ba.png)
+
+Depois, em **Global Credentials**
+
+![image](https://user-images.githubusercontent.com/80921933/206957762-4bc235dc-d225-4e1a-a181-6fc6ae7bbb1d.png)
+
+Depois de clicar em **Add Credentials**, selecionamos **Secret text** do menu **Kind**
+
+Depois, basta preencher as informações
+
+- **ID** se refere a key da secret
+- **Secret** se refere ao value da secret
+
+![image](https://user-images.githubusercontent.com/80921933/206958037-2b881d68-e5c6-476d-ba03-2ed9dd184278.png)
+
 
 
 
