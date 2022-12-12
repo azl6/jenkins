@@ -77,6 +77,43 @@ Agora, ao rodar o projeto novamente, somos obrigados a fornecer os parâmetros p
 
 Podemos criar parâmetros do tipo **list**, **boolean**, etc...
 
+# Instalando o plugin de SSH
+
+**IMPORTANTE**: Não fiz isso funcionar. Para testar, podemos usar a estrutura da section 4 (no repositório). Entretanto, **recriar** as chaves para que sejam do tipo PEM com o comando **ssh-keygen -f remote-ki -m PEM**, e reestruturar os Dockerfiles. Tive erros na hora de clicar em **Check connection**, recebia uma mensagem em vermelho de erro, e a conexão não era possível. Futuramente, retestar essa parte. Mais detalhes na sessão de comentários da aula 30. Além disso, documentar os passos da aula 31.
+
+Em **Dashboard > Manage Jenkins > Plugin Manager > Available Plugins**, podemos buscar pelo plugin SSH
+
+![image](https://user-images.githubusercontent.com/80921933/206933597-a55646db-55c1-43d2-a410-293a54382edf.png)
+
+Depois, vamos para **Dashboard > Manage Jenkins > Credentials > System > Global credentials (unrestricted)**
+
+![image](https://user-images.githubusercontent.com/80921933/206935588-f83890b4-581d-4742-b1d9-9ac28e86f4cf.png)
+
+Ao clicar em **Add credentials**, devemos preencher os campos **Username** e **Private key**
+
+- O campo **Username** se refere ao usuário criado no servidor remoto
+- O campo **Private key** se refere ao retorno do comando **cat \<PRIVATE_KEY>**
+
+Depois, clicamos em 
+
+Vamos para **Dashboard > Manage Jenkins > Configure System**, buscamos por **SSH remote hosts**, e clicamos em **Add**
+
+![image](https://user-images.githubusercontent.com/80921933/206935420-5fe2a575-b7c5-437f-8345-920ea47aaa39.png)
+
+Devemos preencher os seguintes campos:
+
+- Hostname: Se refere ao DNS do servidor ao qual desejamos nos conectar
+- Port: 22
+- Credential: A credencial criada no passo anterior
+
+![image](https://user-images.githubusercontent.com/80921933/206936895-745400ff-64cc-462c-b262-dba3b183c90c.png)
+
+
+
+
+
+
+
 
 
 
