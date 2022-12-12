@@ -79,7 +79,7 @@ Podemos criar parâmetros do tipo **list**, **boolean**, etc...
 
 # Instalando o plugin de SSH
 
-**IMPORTANTE**: Não fiz isso funcionar. Para testar, podemos usar a estrutura da section 4 (no repositório). Entretanto, **recriar** as chaves para que sejam do tipo PEM com o comando **ssh-keygen -f remote-ki -m PEM**, e reestruturar os Dockerfiles. Tive erros na hora de clicar em **Check connection**, recebia uma mensagem em vermelho de erro, e a conexão não era possível. Futuramente, retestar essa parte. Mais detalhes na sessão de comentários da aula 30. Além disso, documentar os passos da aula 31.
+**IMPORTANTE**: Não fiz isso funcionar. Para testar, podemos usar a estrutura da section 4 (no repositório). Entretanto, **recriar** as chaves para que sejam do tipo PEM com o comando **ssh-keygen -f remote-ki -m PEM**, e reestruturar os Dockerfiles. Tive erros na hora de clicar em **Check connection**, recebia uma mensagem em vermelho de erro, e a conexão não era possível. Futuramente, retestar essa parte. Mais detalhes na sessão de comentários da aula 30.
 
 Em **Dashboard > Manage Jenkins > Plugin Manager > Available Plugins**, podemos buscar pelo plugin SSH
 
@@ -107,6 +107,14 @@ Devemos preencher os seguintes campos:
 - Credential: A credencial criada no passo anterior
 
 ![image](https://user-images.githubusercontent.com/80921933/206936895-745400ff-64cc-462c-b262-dba3b183c90c.png)
+
+Para executar scripts no host remoto conectado via ssh, selecionamos a seguinte opção
+
+![image](https://user-images.githubusercontent.com/80921933/206937220-39589b91-6fb6-4653-ba4f-5919e10d86e8.png)
+
+Basta selecionarmos o host criado e colocar o script normalmente na caixa de texto. Tudo será rodado no host remoto, e quaisquer arquivos também serão criados lá.
+
+![image](https://user-images.githubusercontent.com/80921933/206937307-39de0d88-b31c-40f7-912a-92e275d73305.png)
 
 
 
