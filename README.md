@@ -116,6 +116,24 @@ Basta selecionarmos o host criado e colocar o script normalmente na caixa de tex
 
 ![image](https://user-images.githubusercontent.com/80921933/206937307-39de0d88-b31c-40f7-912a-92e275d73305.png)
 
+# Fazendo backup de um banco MySQL pro S3 pelo Jenkins
+
+- Criar 3 contêineres: Jenkins, Server Ubuntu e MySQL contêiner
+- Criar uma tabela de exemplo pra fazer o dump
+
+**Comando dump:**
+
+ -h representa o host. Esse comando foi executado do Server Ubuntu.
+ 
+![image](https://user-images.githubusercontent.com/80921933/206938544-f1be1674-2888-4374-b7f7-2453d83f69ec.png)
+
+- Fazer o upload do dump para o S3 manualmente
+- Automatizar o backup com shell script
+
+... CONTINUA AULA 38
+
+
+
 
 
 
