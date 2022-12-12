@@ -77,6 +77,11 @@ Agora, ao rodar o projeto novamente, somos obrigados a fornecer os parâmetros p
 
 Podemos criar parâmetros do tipo **list**, **boolean**, etc...
 
+**IMPORTANTE**: Parâmetros passados do Jenkins para um script/comando devem **sempre** utilizar o **$**
+
+![image](https://user-images.githubusercontent.com/80921933/206959478-5aa46cb3-e57c-433c-9bc3-f1fdc92a1c19.png)
+
+
 # Instalando o plugin de SSH
 
 **IMPORTANTE**: Não fiz isso funcionar. Para testar, podemos usar a estrutura da section 4 (no repositório). Entretanto, **recriar** as chaves para que sejam do tipo PEM com o comando **ssh-keygen -f remote-ki -m PEM**, e reestruturar os Dockerfiles. Tive erros na hora de clicar em **Check connection**, recebia uma mensagem em vermelho de erro, e a conexão não era possível. Futuramente, retestar essa parte. Mais detalhes na sessão de comentários da aula 30.
@@ -158,16 +163,11 @@ Depois, basta preencher as informações
 
 ![image](https://user-images.githubusercontent.com/80921933/206958037-2b881d68-e5c6-476d-ba03-2ed9dd184278.png)
 
+Para utilizar a secret criada, basta que, na sessão **Build Environment**, selecionemos as seguintes opções
 
+![image](https://user-images.githubusercontent.com/80921933/206958727-9e247c39-cd1e-472b-b727-7df5bcba56db.png)
 
+Depois, selecionamos a secret criada e a associamos com um value que será usado no script
 
-
-
-
-
-
-
-
-
-
+![image](https://user-images.githubusercontent.com/80921933/206958874-78bf8477-16d6-4094-b5e8-de7ca09852c9.png)
 
