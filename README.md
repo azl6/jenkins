@@ -128,7 +128,7 @@ Basta selecionarmos o host criado e colocar o script normalmente na caixa de tex
 
 **Comando dump:**
 
- -h representa o host. Esse comando foi executado do Server Ubuntu.
+ A flag -h representa o host. Esse comando foi executado do Server Ubuntu.
  
 ![image](https://user-images.githubusercontent.com/80921933/206938544-f1be1674-2888-4374-b7f7-2453d83f69ec.png)
 
@@ -138,12 +138,15 @@ Basta selecionarmos o host criado e colocar o script normalmente na caixa de tex
 
 - Automatizar o backup com shell script
 
-... CONTINUA AULA 38
-
 O resultado final deve ficar assim:
 
 ![image](https://user-images.githubusercontent.com/80921933/206960397-31888462-6f10-4aae-aae9-a4255964b9c5.png)
 
+Resultado: 
+
+![image](https://user-images.githubusercontent.com/80921933/207519462-a83b7f37-75fd-4aec-b186-1f37fbefc3e5.png)
+
+Basta seguir as informações fornecidas no README.
 
 # Gerenciando secrets pelo Jenkins
 
