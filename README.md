@@ -84,7 +84,7 @@ Podemos criar parâmetros do tipo **list**, **boolean**, etc...
 
 # Instalando o plugin de SSH
 
-**IMPORTANTE**: Não fiz isso funcionar. Para testar, podemos usar a estrutura da section 4 (no repositório). Entretanto, **recriar** as chaves para que sejam do tipo PEM com o comando **ssh-keygen -f remote-ki -m PEM**, e reestruturar os Dockerfiles. Tive erros na hora de clicar em **Check connection**, recebia uma mensagem em vermelho de erro, e a conexão não era possível. Futuramente, retestar essa parte. Mais detalhes na sessão de comentários da aula 30.
+**IMPORTANTE**: Na geração de chaves para essa etapa, devemos usar o comando ssh-keygen -t ecdsa -m PEM -f id_rsa3, caso contrário, teremos o erro de "Can't connect..." na hora de testar a conexão via SSH
 
 Em **Dashboard > Manage Jenkins > Plugin Manager > Available Plugins**, podemos buscar pelo plugin SSH
 
