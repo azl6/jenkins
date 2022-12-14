@@ -123,8 +123,15 @@ Basta selecionarmos o host criado e colocar o script normalmente na caixa de tex
 
 # Fazendo backup de um banco MySQL pro S3 pelo Jenkins
 
+To-do list para essa task:
+
 - Criar 3 contêineres: Jenkins, Server Ubuntu e MySQL contêiner
 - Criar uma tabela de exemplo pra fazer o dump
+- Realizar o dump com o **mysqldump** manualmente e o upload para o S3 manualmente
+- Automatizar a tarefa com shell script
+- Criar um job no Jenkins, que permita que o contêiner do Jenkins execute um script no servidor Ubuntu via plugin SSH, onde tal script realizará o dump do banco escolhido, e realizará o upload de tal para o S3
+
+**Importante: ** Para a comunicação com o S3, será necessário a utilização do **Access Key ID** e **Secret Access Key** da AWS. No script, inserir ENVS que referenciam tais variáveis. O seguinte link representa bem a ideia: https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-envvars.html
 
 **Comando dump:**
 
@@ -132,11 +139,9 @@ Basta selecionarmos o host criado e colocar o script normalmente na caixa de tex
  
 ![image](https://user-images.githubusercontent.com/80921933/206938544-f1be1674-2888-4374-b7f7-2453d83f69ec.png)
 
-- Fazer o upload do dump para o S3 manualmente com o seguinte comando
+Fazer o upload do dump para o S3 manualmente com o seguinte comando
 
 ![image](https://user-images.githubusercontent.com/80921933/206956336-cdb5d33f-c042-4963-b946-6e3fa28d6038.png)
-
-- Automatizar o backup com shell script
 
 O resultado final deve ficar assim:
 
@@ -146,7 +151,7 @@ Resultado: **DEU CERTO!**
 
 ![image](https://user-images.githubusercontent.com/80921933/207519462-a83b7f37-75fd-4aec-b186-1f37fbefc3e5.png)
 
-Basta seguir as informações fornecidas no README.
+O README contém todas as informações para a execução deste projeto.
 
 # Gerenciando secrets pelo Jenkins
 
