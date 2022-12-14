@@ -131,7 +131,7 @@ To-do list para essa task:
 - Automatizar a tarefa com shell script
 - Criar um job no Jenkins, que permita que o contêiner do Jenkins execute um script no servidor Ubuntu via plugin SSH, onde tal script realizará o dump do banco escolhido, e realizará o upload de tal para o S3
 
-**Importante: ** Para a comunicação com o S3, será necessário a utilização do **Access Key ID** e **Secret Access Key** da AWS. No script, inserir ENVS que referenciam tais variáveis. O seguinte link representa bem a ideia: https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-envvars.html
+**IMPORTANTE**: Para a comunicação com o S3, será necessário a utilização do **Access Key ID** e **Secret Access Key** da AWS. No script, inserir ENVS que referenciam tais variáveis. O seguinte link representa bem a ideia: https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-envvars.html
 
 **Comando dump:**
 
