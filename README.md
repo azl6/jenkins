@@ -254,6 +254,12 @@ Agora, basta selecionar o checkbox da role a qual você gostaria de associar o u
 
 Associando a role **read-only** criada ao usuário **alex**, vemos que o login agora funciona adequadamente. Para outras roles, basta dar as permissões desejadas.
 
+# Criando uma project role
+
+Podemos informar que um usuário X terá acesso a todos os jobs que começam com **ansible-**, por exemplo. Essas são as Project Roles.
+
+Para mais detalhes sobre elas, consultar aula 74.
+
 
 
 
