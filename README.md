@@ -377,6 +377,29 @@ Nas configurações do job, em **Post-build Actions**, podemos selecionar a opç
 
 ![image](https://user-images.githubusercontent.com/80921933/207975904-f31a42a6-377c-4496-ae83-993810850dd7.png)
 
+# Instalando os plugins necessários para integrar o Jenkins com o Maven e Git
+
+Devemos instalar os plugins **Maven integration**, **Git plugin** e **Git client** (caso já não estejam instalados)
+
+# Como clonar um projeto do Github a partir do Jenkins
+
+Link para o repositório clonado nesse exemplo: https://github.com/jenkins-docs/simple-java-maven-app
+
+Nas configurações de um job, em **Source code management**, inserimos o link para o repositório do Github
+
+![image](https://user-images.githubusercontent.com/80921933/207978377-10cf0e74-0aa8-4206-b565-6a49306c452c.png)
+
+Agora, se rodarmos o job, rodará normalmente.
+
+O projeto clonado ficará armazenado no **workspace** com o nome do job criado. Nesse exemplo, o job se chamava **maven-job**, portanto, o projeto estará armazenado em **/var/jenkins_home/workspace/maven-job**
+
+![image](https://user-images.githubusercontent.com/80921933/207978929-8dc0c5af-5252-42f5-9f1e-2a8b758848d8.png)
+
+
+
+
+
+
 
 
 
