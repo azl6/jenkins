@@ -283,7 +283,6 @@ Para tal,
 1. Selecionamos um job
 
 2. Clicamos em **Configure**
-
   ![image](https://user-images.githubusercontent.com/80921933/207949317-5ca9d2e3-4f3f-4dff-81c0-1cff16c65f7a.png)
   
 3. Em **Build triggers**, definimos um cron expression e salvamos.
