@@ -196,5 +196,65 @@ Agora, ao acessar a página de login, teremos acesso ao botão de cadastrar uma 
 
 Todas as contas criadas terão permissões máximas, e normalmente não é isso que queremos.
 
+# Instalando o plugin Role-based Authorization Strategy e o utilizando roles
+
+Instalamos o plugin **Role-based Authorization Strategy** e reiniciamos o Jenkins
+
+Depois, em **Configure Global Security**, selecionamos a opção **Role-based strategy**
+
+![image](https://user-images.githubusercontent.com/80921933/207938085-ccbde430-3fe8-4fc2-be76-b30f93d523d7.png)
+
+Uma nova opção aparecerá no menu: **Manage and assign roles**
+
+Em **Manage users**
+
+![image](https://user-images.githubusercontent.com/80921933/207939290-df2524fa-39de-41bf-9ddb-d5690069f063.png)
+
+Poderemos ver todos os usuários na base de dados do Jenkins
+
+![image](https://user-images.githubusercontent.com/80921933/207939372-7e237fbc-e1c1-4b55-959c-c80f0264200a.png)
+
+Criei um novo usuário chamado **alex**
+
+![image](https://user-images.githubusercontent.com/80921933/207939527-552f164e-0441-415e-a3a7-ca7f73821507.png)
+
+Ao tentar logar com o usuário **alex**, recebemos uma mensagem de erro. Isso acontece porque ainda não configuramos roles para ele.
+
+![image](https://user-images.githubusercontent.com/80921933/207939829-8d2adf41-d777-4c14-96c3-fa234ee59eff.png)
+
+# Criando uma role e assignando-a a um usuário
+
+Clicar no seguinte botão
+
+![image](https://user-images.githubusercontent.com/80921933/207940932-cba96a66-1fcc-43c8-bcea-225d294f08bb.png)
+
+Clicamos em **Manage roles**
+
+![image](https://user-images.githubusercontent.com/80921933/207941720-5bcd74a1-1bf9-4e5f-80e7-14cacaea154e.png)
+
+Nomeamos nossa role e clicamos em **Add**
+
+![image](https://user-images.githubusercontent.com/80921933/207941186-19701c3e-15cb-42e3-93d0-099176a1868d.png)
+
+Agora, basta atribuir as permissões desejadas para a role criada
+
+![image](https://user-images.githubusercontent.com/80921933/207941301-6ed67bca-0753-43ec-b119-b9e382bb9eb7.png)
+
+Depois, em **Assign Roles**
+
+![image](https://user-images.githubusercontent.com/80921933/207941695-39b1a6c2-6475-41d8-80bf-25d74628547f.png)
+
+Inserimos o usuário criado (alex) na tabelinha com o botão **Add**
+
+![image](https://user-images.githubusercontent.com/80921933/207942005-274d2246-77f3-4536-8337-1ed0655b0047.png)
+
+Agora, basta selecionar o checkbox da role a qual você gostaria de associar o usuário, e salvar.
+
+Associando a role **read-only** criada ao usuário **alex**, vemos que o login agora funciona adequadamente.
+
+
+
+
+
 
 
