@@ -359,6 +359,17 @@ Ao clicar em **Test configuration**, devemos ver a seguinte mensagem
 
 ![image](https://user-images.githubusercontent.com/80921933/207970693-dbbff9a7-ff00-4be7-839b-d4d246339764.png)
 
+# Integrando o Jenkins ao Gmail
+
+Basta alterar algumas informações do tutorial anterior, de forma que fique da seguinte maneira
+
+![image](https://user-images.githubusercontent.com/80921933/207974777-315004c0-f1fa-4a5b-ae7f-fe5a729e6e15.png)
+
+O servidor SMTP do google é o smtp.google.com
+O **user name** e **password** referenciam as credenciais de sua própria conta
+A porta do servidor via SSL é 465
+
+
 
 
 
