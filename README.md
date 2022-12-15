@@ -184,3 +184,17 @@ Depois, selecionamos a secret criada e a associamos com um value que será usado
 
 ![image](https://user-images.githubusercontent.com/80921933/206958874-78bf8477-16d6-4094-b5e8-de7ca09852c9.png)
 
+# Permitindo que usuários criem uma conta
+
+Em **Dashboard > Manage Jenkins > Configure Global Security**, marcamos a opção **Allow users to sign up**
+
+![image](https://user-images.githubusercontent.com/80921933/207936441-ad7f94b1-8d04-474e-8bac-d7afd6e6c024.png)
+
+Agora, ao acessar a página de login, teremos acesso ao botão de cadastrar uma nova conta
+
+![image](https://user-images.githubusercontent.com/80921933/207936534-487a0699-d43b-42d5-ab37-2100c4c7b687.png)
+
+Todas as contas criadas terão permissões máximas, e normalmente não é isso que queremos.
+
+
+
