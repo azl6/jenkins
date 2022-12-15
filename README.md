@@ -250,7 +250,9 @@ Inserimos o usuário criado (alex) na tabelinha com o botão **Add**
 
 Agora, basta selecionar o checkbox da role a qual você gostaria de associar o usuário, e salvar.
 
-Associando a role **read-only** criada ao usuário **alex**, vemos que o login agora funciona adequadamente.
+![image](https://user-images.githubusercontent.com/80921933/207945492-fa55bd64-f3ce-45e5-8c8c-cb11b6c7a209.png)
+
+Associando a role **read-only** criada ao usuário **alex**, vemos que o login agora funciona adequadamente. Para outras roles, basta dar as permissões desejadas.
 
 
 
