@@ -292,7 +292,7 @@ Para tal,
 
 Pronto! Seu job está agendado.
 
-# Triggering jobs from external sources
+# Trigger de jobs sem parâmetros a partir de fontes externas
 
 Na tela do job escolhido, copiamos a url do botão **Build Now**
 
@@ -321,6 +321,11 @@ E o job será rodado.
 1. Install the Strict Crumb Issue Plugin as per normal process.
 2. Manage Jenkins > Configure Global Security > CSRF Protection. Change it to Strict Crumb Issuer. Click Advanced. Uncheck the Check the session ID box. Save.
 
+# Trigger de jobs com parâmetros a partir de fontes externas
+
+Seguimos os mesmos passos anteriores, porém, na hora de executar o segundo curl, **substituimos o "build?" por "buildWithParameters?"**. Depois do **?**, passarmos as variáveis no seguinte formato:
+
+\<CURL> \<URL>/buildWithParameters?VARIAVEL1=oi&VARIAVEL2=ola...
 
 
 
