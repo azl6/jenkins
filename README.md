@@ -260,6 +260,37 @@ Podemos informar que um usuário X terá acesso a todos os jobs que começam com
 
 Para mais detalhes sobre elas, consultar aula 74.
 
+# Jenkins-defined environment variables
+
+Algumas env existem no Jenkins por padrão.
+
+![image](https://user-images.githubusercontent.com/80921933/207947124-92e96c24-d2e1-430f-830d-449d82374e02.png)
+
+Podemos consultar todas as envs disponíveis em: https://wiki.jenkins.io/display/JENKINS/Building+a+software+project
+
+# User-defined environment variables
+
+Em **Dashboard > Manage Jenkins > Configure System**, podemos selecionar a opção **Environment variables** e definir nossas próprias variáveis de ambiente personalizadas, e posteriormente referenciá-las em scripts.
+
+![image](https://user-images.githubusercontent.com/80921933/207948217-c7266bbe-624b-45c1-aa19-650643398a29.png)
+
+# Cron jobs com o Jenkins
+
+Podemos agendar um job para rodar em horários determinados utilizando cron expressions.
+
+Para tal,
+
+1. Selecionamos um job
+2. Clicamos em **Configure**
+  ![image](https://user-images.githubusercontent.com/80921933/207949317-5ca9d2e3-4f3f-4dff-81c0-1cff16c65f7a.png)
+3. Em **Build triggers**, definimos um cron expression e salvamos.
+  ![image](https://user-images.githubusercontent.com/80921933/207949541-6133d2c4-8d3a-4d90-a1b8-7b0d6e67b562.png)
+
+Pronto! Seu job está agendado.
+
+
+
+
 
 
 
