@@ -371,6 +371,13 @@ A porta do servidor via SSL é 465 <br>
 
 Caso tenha algum problema, consultar páginas acerca do **Gmail with less-secure applications**
 
+# Enviando e-mail em caso de falha em jobs
+
+Nas configurações do job, em **Post-build Actions**, podemos selecionar a opção **Email notification**, e receber e-mails sempre que a build quebrar.
+
+![image](https://user-images.githubusercontent.com/80921933/207975904-f31a42a6-377c-4496-ae83-993810850dd7.png)
+
+
 
 
 
