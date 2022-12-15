@@ -327,6 +327,8 @@ Seguimos os mesmos passos anteriores, porém, na hora de executar o segundo curl
 
 \<CURL> \<URL>/buildWithParameters?VARIAVEL1=oi&VARIAVEL2=ola...
 
+Em caso de dúvidas, consultar a aula 82.
+
 
 
 
