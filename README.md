@@ -365,9 +365,11 @@ Basta alterar algumas informações do tutorial anterior, de forma que fique da 
 
 ![image](https://user-images.githubusercontent.com/80921933/207974777-315004c0-f1fa-4a5b-ae7f-fe5a729e6e15.png)
 
-O servidor SMTP do google é o smtp.google.com
-O **user name** e **password** referenciam as credenciais de sua própria conta
-A porta do servidor via SSL é 465
+O servidor SMTP do google é o smtp.google.com <br>
+O **user name** e **password** referenciam as credenciais de sua própria conta <br>
+A porta do servidor via SSL é 465 <br>
+
+Caso tenha algum problema, consultar páginas acerca do **Gmail with less-secure applications**
 
 
 
