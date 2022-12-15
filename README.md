@@ -329,6 +329,36 @@ Seguimos os mesmos passos anteriores, porém, na hora de executar o segundo curl
 
 Em caso de dúvidas, consultar a aula 82.
 
+# Integrando o Jenkins com o AWS SES
+
+Depois de verificar um e-mail, vamos para a opção **SMTP settings**, e copiamos a variável **SMTP endpoint**
+
+![image](https://user-images.githubusercontent.com/80921933/207968323-cb2544f0-fb07-4084-bbf2-23617c891081.png)
+
+Em **Dashboard > Manage Jenkins > Configure System**, colamos o **SMTP endpoint** copiado na opção com o header **Email notification**
+
+![image](https://user-images.githubusercontent.com/80921933/207968780-3dcb12df-4d8c-4f58-bfa1-52e95113707d.png)
+
+De volta a AWS, clicamos em **Create SMTP credentials**
+
+Escolhemos um nome para as credenciais, e baixamos o .csv fornecido pela AWS
+
+![Screenshot from 2022-12-15 18-18-27](https://user-images.githubusercontent.com/80921933/207969251-23ca8a79-48dd-4bcb-87fc-002d5ca49e43.png)
+
+De volta ao Jenkins, ao clicar em **Advanced**, preenchemos o User Name e Password gerados pela AWS
+
+![image](https://user-images.githubusercontent.com/80921933/207969837-6a89b23d-3da7-4544-8d7e-df5e780dd2fc.png)
+
+Para o campo **SMTP Port**, buscamos na AWS as portas disponibilizadas pelo servidor SMTP
+
+![image](https://user-images.githubusercontent.com/80921933/207970139-15293d3d-d032-4db8-a510-b2d11e0d4741.png)
+
+Para o campo **Reply-to address**, preenchemos nosso e-mail convencional
+
+Ao clicar em **Test configuration**, devemos ver a seguinte mensagem
+
+![image](https://user-images.githubusercontent.com/80921933/207970693-dbbff9a7-ff00-4be7-839b-d4d246339764.png)
+
 
 
 
