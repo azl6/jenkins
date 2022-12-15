@@ -292,7 +292,34 @@ Para tal,
 
 Pronto! Seu job está agendado.
 
+# Triggering jobs from external sources
 
+Na tela do job escolhido, copiamos a url do botão **Build Now**
+
+![Screenshot from 2022-12-15 17-15-48](https://user-images.githubusercontent.com/80921933/207958413-75d558e9-e927-4ebe-96a8-0aa7643b8a9c.png)
+
+Agora, rodamos o comando (o -u alex:123 referencia um usuário criado com as permissões necessárias, e o localhost:8080 representa onde o Jenkins está hospedado. O resto é padrão. Adaptar conforme a necessidade.)
+
+```
+crumb=$(curl -u "alex:123" -s 'http://localhost:8080/crumbIssuer/api/xml?xpath=concat(//crumbRequestField,":",//crumb)')
+```
+
+Receberemos como resposta um **Jenkins-Crumb**
+
+![image](https://user-images.githubusercontent.com/80921933/207960515-ccdf5451-b324-4918-b42f-61f89fcc0904.png)
+
+Depois, basta executar o comando (adaptando para a sua realidade)
+
+```
+curl -u "alex:123" -H "$crumb" -X POST http://localhost:8080/job/remote-host-simple-task/build?delay=0sec
+```
+
+E o job será rodado.
+
+**Importante**: Caso a prática retorne um 403, basta seguir o seguinte tutorial:
+
+1. Install the Strict Crumb Issue Plugin as per normal process.
+2. Manage Jenkins > Configure Global Security > CSRF Protection. Change it to Strict Crumb Issuer. Click Advanced. Uncheck the Check the session ID box. Save.
 
 
 
