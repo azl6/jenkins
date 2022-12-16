@@ -448,6 +448,40 @@ Agora, a tela pricipal do job mostrará o último artifact buildado com sucesso
 
 ![image](https://user-images.githubusercontent.com/80921933/208022063-e83866ce-d80a-4523-a64c-8fff62ab603e.png)
 
+# Estrutura de um script DSL
+
+- Script DSL que cria um job chamado **job_dsl_created**
+
+    ```
+    job('job_dsl_created'){
+
+    }
+    ```
+- Definindo o description de um job (texto que aparece abaixo do título)
+    
+    ```
+    job('job_dsl_created'){
+    
+      description('This is my first job description!')
+      
+    }
+    ```
+    
+- Definindo os parâmetros de um job
+
+    ```
+    job('job_dsl_created'){
+    
+      parameters {
+          stringParam('Planet', defaultValue = 'world', description = 'This is the world')
+          booleanParam('FLAG', true)
+          choiceParam('OPTION', ['option 1 (default)', 'option 2', option 3])
+      }
+      
+    }
+    ```
+
+
 
 
 
