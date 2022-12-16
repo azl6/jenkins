@@ -395,6 +395,41 @@ O projeto clonado ficará armazenado no **workspace** com o nome do job criado. 
 
 ![image](https://user-images.githubusercontent.com/80921933/207978929-8dc0c5af-5252-42f5-9f1e-2a8b758848d8.png)
 
+# Configurando o Maven no Jenkins
+
+Em **Dashboard > Manage Jenkins > Global Tool Configuration**, clicamos em **Add Maven** e selecionamos a versão desejada
+
+![image](https://user-images.githubusercontent.com/80921933/208012867-13c731b4-5871-4f3d-a3ef-b813be022130.png)
+
+Na sessão de **Build steps** do job, selecionamos a opção **Invoke top-level Maven targets** e selecionamos o objeto do Maven criado anteriormente, além de definir os comandos executados
+
+Essa "pipeline" terá a seguinte sequência:
+
+1. Clonar o repositório
+2. Gerar o jar com o mvn -DskipTests clean package
+3. Rodar os testes com mvn test
+4. Executar o código com o java -jar \<CAMINHO_JAR_GERADO>
+
+Clonando o repositório...
+
+![image](https://user-images.githubusercontent.com/80921933/208015884-77e3762b-8d40-4e49-8107-7bf19b7cab28.png)
+
+Gerando o jar...
+
+![image](https://user-images.githubusercontent.com/80921933/208013107-71db59da-fbbc-436d-9610-3c2900f8492f.png)
+
+Rodando os testes...
+
+![image](https://user-images.githubusercontent.com/80921933/208015518-ebc733e9-0750-44f5-8ba9-a8d1bd603326.png)
+
+Executando o código a partir do jar...
+
+![image](https://user-images.githubusercontent.com/80921933/208015731-411b6572-dc91-4219-9e1b-8ecd7a704a00.png)
+
+
+
+
+
 
 
 
