@@ -513,17 +513,17 @@ Agora, a tela pricipal do job mostrará o último artifact buildado com sucesso
     
 - Definindo build-steps para mais de uma linha
 
-```
-job('job_dsl_created'){
+    ```
+    job('job_dsl_created'){
 
-  shell("""
-        echo 'Linha 1'
-        echo 'Linha 2'
-        echo 'Linha 3'
-        """)
+      shell("""
+            echo 'Linha 1'
+            echo 'Linha 2'
+            echo 'Linha 3'
+            """)
 
-}
-```
+    }
+    ```
 
 - Definindo Mailing para Post-build actions
 
