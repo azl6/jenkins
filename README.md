@@ -483,24 +483,59 @@ Agora, a tela pricipal do job mostrará o último artifact buildado com sucesso
     
 - Definindo o Source Code Management (SCM)
 
-```
-job('job_dsl_created'){
+    ```
+    job('job_dsl_created'){
 
-  git('https://github.com/jenkins-docs/simple-java-maven-app', 'master')
+      git('https://github.com/jenkins-docs/simple-java-maven-app', 'master')
 
-}
-```
+    }
+    ```
 
 - Definindo triggers, como cron expressions
 
+    ```
+    job('job_dsl_created'){
+
+      cron('* * * * *')
+
+    }
+    ```
+
+- Definindo build-steps para uma linha
+
+    ```
+    job('job_dsl_created'){
+
+      shell("echo 'Hello world!'")
+
+    }
+    ```
+    
+- Definindo build-steps para mais de uma linha
+
 ```
 job('job_dsl_created'){
 
-  cron('* * * * *')
+  shell("""
+        echo 'Linha 1'
+        echo 'Linha 2'
+        echo 'Linha 3'
+        """)
 
 }
 ```
 
+- Definindo Mailing para Post-build actions
+
+    ```
+    job('job_dsl_created'){
+
+      publishers{
+          mailer('me@example.com', true, true)
+      }
+
+    }
+    ```
 
 
 
