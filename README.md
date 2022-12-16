@@ -444,6 +444,11 @@ Agora, a tela pricipal do job mostrará o último artifact buildado com sucesso
 
 ![image](https://user-images.githubusercontent.com/80921933/208016787-53bd21fa-43e3-4a43-b11f-34eddbe62613.png)
 
+# Instalando o plugin de DSL do Jenkins
+
+![image](https://user-images.githubusercontent.com/80921933/208022063-e83866ce-d80a-4523-a64c-8fff62ab603e.png)
+
+
 
 
 
