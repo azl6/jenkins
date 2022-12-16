@@ -426,6 +426,26 @@ Executando o código a partir do jar...
 
 ![image](https://user-images.githubusercontent.com/80921933/208015731-411b6572-dc91-4219-9e1b-8ecd7a704a00.png)
 
+# Documentando o último artifact (jar) buildado com sucesso
+
+Nas configurações do job, vamos em **Post-build Actions**
+
+Selecionamos a opção **Archive the artifact**
+
+Preenchemos as informações para que o Jenkins possa identificar o arquivo a ser documentado, nesse caso, o jar da pasta target
+
+![image](https://user-images.githubusercontent.com/80921933/208016512-e354d1c4-744d-4f78-b9f7-e905a822ea9d.png)
+
+Vale lembrar que podemos passar o caminho relativo (target/*.jar) porque o job possui uma workspace, e executará tudo a partir dela.
+
+![image](https://user-images.githubusercontent.com/80921933/208016695-0775f553-2d8b-44c4-93ab-64485ff4ac90.png)
+
+Agora, a tela pricipal do job mostrará o último artifact buildado com sucesso
+
+![image](https://user-images.githubusercontent.com/80921933/208016787-53bd21fa-43e3-4a43-b11f-34eddbe62613.png)
+
+
+
 
 
 
