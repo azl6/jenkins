@@ -452,14 +452,14 @@ Agora, a tela pricipal do job mostrará o último artifact buildado com sucesso
 
 - Script DSL que cria um job chamado **job_dsl_created**
 
-    ```
+    ```groovy
     job('job_dsl_created'){
 
     }
     ```
 - Definindo o description de um job (texto que aparece abaixo do título)
     
-    ```
+    ```groovy
     job('job_dsl_created'){
     
       description('This is my first job description!')
@@ -469,7 +469,7 @@ Agora, a tela pricipal do job mostrará o último artifact buildado com sucesso
     
 - Definindo os parâmetros de um job
 
-    ```
+    ```groovy
     job('job_dsl_created'){
     
       parameters {
@@ -483,7 +483,7 @@ Agora, a tela pricipal do job mostrará o último artifact buildado com sucesso
     
 - Definindo o Source Code Management (SCM)
 
-    ```
+    ```groovy
     job('job_dsl_created'){
 
       git('https://github.com/jenkins-docs/simple-java-maven-app', 'master')
@@ -493,7 +493,7 @@ Agora, a tela pricipal do job mostrará o último artifact buildado com sucesso
 
 - Definindo triggers, como cron expressions
 
-    ```
+    ```groovy
     job('job_dsl_created'){
 
       cron('* * * * *')
@@ -503,7 +503,7 @@ Agora, a tela pricipal do job mostrará o último artifact buildado com sucesso
 
 - Definindo build-steps para uma linha
 
-    ```
+    ```groovy
     job('job_dsl_created'){
 
       shell("echo 'Hello world!'")
@@ -513,7 +513,7 @@ Agora, a tela pricipal do job mostrará o último artifact buildado com sucesso
     
 - Definindo build-steps para mais de uma linha
 
-    ```
+    ```groovy
     job('job_dsl_created'){
 
       shell("""
@@ -527,7 +527,7 @@ Agora, a tela pricipal do job mostrará o último artifact buildado com sucesso
 
 - Definindo Mailing para Post-build actions
 
-    ```
+    ```groovy
     job('job_dsl_created'){
 
       publishers{
@@ -538,7 +538,7 @@ Agora, a tela pricipal do job mostrará o último artifact buildado com sucesso
     }
     ```
     
-Exemplo de script DSL (sem mvn test porque deu problema, mas o ideal é incluir um step para isso):
+# Exemplo de script DSL (sem mvn test porque deu problema, mas o ideal é incluir um step para isso):
 
 ```groovy
 job('maven_dsl'){
