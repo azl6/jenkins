@@ -537,6 +537,36 @@ Agora, a tela pricipal do job mostrará o último artifact buildado com sucesso
 
     }
     ```
+    
+Exemplo de script DSL (sem mvn test porque deu problema, mas o ideal é incluir um step para isso):
+
+```groovy
+job('maven_dsl'){
+  
+  description('Esse job foi criado a partir de um script DSL, a fim de replicar o job de integração com o Maven, feito manualmente')
+  
+  scm{
+    git('https://github.com/jenkins-docs/simple-java-maven-app', 'master', {node -> node / 'extensions' << ''})
+  }
+  
+  steps {
+    
+    maven {
+      mavenInstallation('maven-jenkins')
+      goals('-B -DskipTests clean package')
+    }
+    
+    shell("""
+      echo "Executing jar..."
+      java -jar /var/jenkins_home/workspace/maven-job/target/my-app-1.0-SNAPSHOT.jar
+      """)
+  }
+  
+  publishers {
+  	archiveArtifacts('target/*.jar')
+  }
+}
+```
 
 
 
