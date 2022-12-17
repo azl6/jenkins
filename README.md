@@ -532,6 +532,7 @@ Agora, a tela pricipal do job mostrará o último artifact buildado com sucesso
 
       publishers{
           mailer('me@example.com', true, true)
+          archiveArtifacts('<PATH_TO_FILE_TO_ARCHIVE>')
       }
 
     }
