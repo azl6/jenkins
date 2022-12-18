@@ -572,7 +572,7 @@ job('maven_dsl'){
 
 ![image](https://user-images.githubusercontent.com/80921933/208271956-99c852b2-91ee-4ef5-b51b-54d71f96c539.png)
 
-# Jenkins pipeline simples
+# Pipeline simples
 
 
 ```groovy
@@ -581,22 +581,38 @@ pipeline {
     stages {
         stage('Build') { 
             steps {
-                echo 'Building...' 
+                sh 'echo "Building..."' 
             }
         }
         stage('Test') { 
             steps {
-                echo 'Testing...' 
+                sh 'echo "Testing..."' 
             }
         }
         stage('Deploy') { 
             steps {
-                echo 'Deploying...' 
+                sh 'echo "Deploying..."' 
             }
         }
     }
 }
 ```
+
+Com o arquivo acima, podemos criar um **Pipeline project**
+
+![image](https://user-images.githubusercontent.com/80921933/208272092-f2f10e0e-c9b8-4733-b974-a45cb24f5f77.png)
+
+Na etapa **Pipeline**, basta colarmos o nosso script
+
+![image](https://user-images.githubusercontent.com/80921933/208272128-f08450b9-791b-45ca-ae7e-31523bb914e3.png)
+
+Ao rodá-lo, vemos que deu tudo certo
+
+![image](https://user-images.githubusercontent.com/80921933/208272151-f6960c44-9973-4965-a000-f4386cd064ab.png)
+
+
+
+
 
 
 
