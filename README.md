@@ -568,6 +568,40 @@ job('maven_dsl'){
 }
 ```
 
+# Instalando plugin do Jenkins Pipeline
+
+![image](https://user-images.githubusercontent.com/80921933/208271956-99c852b2-91ee-4ef5-b51b-54d71f96c539.png)
+
+# Jenkins pipeline simples
+
+
+```groovy
+pipeline {
+    agent any 
+    stages {
+        stage('Build') { 
+            steps {
+                echo 'Building...' 
+            }
+        }
+        stage('Test') { 
+            steps {
+                echo 'Testing...' 
+            }
+        }
+        stage('Deploy') { 
+            steps {
+                echo 'Deploying...' 
+            }
+        }
+    }
+}
+```
+
+
+
+
+
 
 
 
