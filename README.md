@@ -651,6 +651,27 @@ Ao rodá-lo, vemos que deu tudo certo
       }
   }
   ```
+  
+  - **Environment** - Serve para definirmos variáveis que podem ser referênciadas nos steps
+
+  ```groovy
+  pipeline {
+      agent any
+      
+      environment {
+        NAME='ALEX'
+        FAMILYNAME='RODRIGUES'
+      }
+      stages {
+          stage('Build') { 
+              steps {
+                sh 'echo "Hello, $NAME $FAMILYNAME!"'
+              }
+          }
+
+      }
+  }
+  ```
 
 
 
