@@ -692,6 +692,37 @@ Ao rodá-lo, vemos que deu tudo certo
       }
   }
   ```
+  
+    - **Post-actions** - Ações executadas após a pipeline
+
+  ```groovy
+  pipeline {
+      agent any
+      
+      stages {
+          stage('Build') { 
+              steps {
+                sh 'echo "This is a simple step"'
+              }
+          }
+
+      }
+      post{
+        always{
+          sh 'echo "I will always be executed"'
+        }
+        success{
+          sh 'echo "I will only be executed on success"'
+        }
+        failure{
+          sh 'echo "I will only be executed on failure"'
+        }
+        unstable{
+          sh 'echo "I will only be executed if this is unstable"'
+        }
+      }
+  }
+  ```
 
 
 
