@@ -723,7 +723,10 @@ Ao rodá-lo, vemos que deu tudo certo
       }
   }
   ```
-
+  
+  # Informações sobre a utilização de um contêiner do Maven para gerar jar
+  
+  Todos os downloads feitos pelos comandos do Maven são armazenados em **~/.m2**. Isso significa que um bind-mount nessa localidade é uma boa estratégia, já que não precisaremos re-baixar tudo que o Maven necessita toda vez que rodarmos comandos.
 
 
 
