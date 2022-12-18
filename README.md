@@ -672,6 +672,26 @@ Ao rodá-lo, vemos que deu tudo certo
       }
   }
   ```
+  
+    - **Credentials** - Gerenciamento de credenciais. Basta criar a credencial no menu do Jenkins, e referênciá-la no objeto **environment** com o método **credentials**
+
+  ```groovy
+  pipeline {
+      agent any
+      
+      environment {
+        secret=credentials('TEST')
+      }
+      stages {
+          stage('Build') { 
+              steps {
+                sh 'echo "My secret is $TEST"'
+              }
+          }
+
+      }
+  }
+  ```
 
 
 
