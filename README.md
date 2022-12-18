@@ -610,6 +610,48 @@ Ao rodá-lo, vemos que deu tudo certo
 
 ![image](https://user-images.githubusercontent.com/80921933/208272151-f6960c44-9973-4965-a000-f4386cd064ab.png)
 
+# Comandos na pipeline
+
+- **Retry** - Serve para re-tentarmos executar o comando n vezes. Caso não rode adequadamente em nenhuma tentativa, o Jenkins cancelará o job. 
+
+  ```groovy
+  pipeline {
+      agent any 
+      stages {
+          stage('Build') { 
+              steps {
+                  retry(3){
+                    sh 'I am not gonna work' 
+                  }
+              }
+          }
+
+      }
+  }
+  ```
+  
+- **Timeout** - Serve para cancelarmos execuções que tomarem mais tempo que o esperado. No script abaixo, a execução do script **sleep 5** demorará mais que os 3 segundos definidos no timeout, portanto, o Jenkins cancelará a execução.
+
+  ```groovy
+  pipeline {
+      agent any 
+      stages {
+          stage('Build') { 
+              steps {
+                  retry(3){
+                    sh 'echo hello' 
+                  }
+                  
+                  timeout(time: 3, unit: 'SECONDS'){
+                    sh 'sleep 5'
+                  }
+              }
+          }
+
+      }
+  }
+  ```
+
 
 
 
