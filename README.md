@@ -732,6 +732,8 @@ Ao rodá-lo, vemos que deu tudo certo
   
   - Instalar Docker no contêiner do Jenkins
   - Ser capaz de utilizar um contêiner alpine do Maven para realizar o package e test de uma aplicação Java/Maven
+  - Automatizar o processo de geração de jar com shell script
+  - Automatizar o processo de build de imagem com shell script
 
 
 
