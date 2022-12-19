@@ -734,6 +734,10 @@ Ao rodá-lo, vemos que deu tudo certo
   - Ser capaz de utilizar um contêiner alpine do Maven para realizar o package e test de uma aplicação Java/Maven
   - Automatizar o processo de geração de jar com shell script
   - Automatizar o processo de build de imagem com shell script
+  
+Lembrar:
+
+Usar a env $BUILD_TAG do Jenkins
 
 
 
