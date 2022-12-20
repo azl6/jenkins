@@ -739,6 +739,8 @@ Lembrar:
 
 Usar a env $BUILD_TAG do Jenkins
 
+Quase finalizado... Basta criar o script do deploy e configurar o plugin de ssh no jenkins para rodar um script de deploy em um server ubuntu contêinerizado;;;
+
 
 
 
