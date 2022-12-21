@@ -724,16 +724,16 @@ Ao rodá-lo, vemos que deu tudo certo
   }
   ```
   
-  # Informações sobre a utilização de um contêiner do Maven para gerar jar
-  
-  Todos os downloads feitos pelos comandos do Maven são armazenados em **~/.m2**. Isso significa que um bind-mount nessa localidade é uma boa estratégia, já que não precisaremos re-baixar tudo que o Maven necessita toda vez que rodarmos comandos.
-  
-  # Criando pipeline
-  
-  - Instalar Docker no contêiner do Jenkins
-  - Ser capaz de utilizar um contêiner alpine do Maven para realizar o package e test de uma aplicação Java/Maven
-  - Automatizar o processo de geração de jar com shell script
-  - Automatizar o processo de build de imagem com shell script
+# Informações sobre a utilização de um contêiner do Maven para gerar jar
+
+Todos os downloads feitos pelos comandos do Maven são armazenados em **~/.m2**. Isso significa que um bind-mount nessa localidade é uma boa estratégia, já que não precisaremos re-baixar tudo que o Maven necessita toda vez que rodarmos comandos.
+
+# Criando pipeline
+
+- Instalar Docker no contêiner do Jenkins
+- Ser capaz de utilizar um contêiner alpine do Maven para realizar o package e test de uma aplicação Java/Maven
+- Automatizar o processo de geração de jar com shell script
+- Automatizar o processo de build de imagem com shell script
   
 Lembrar:
 
