@@ -1,6 +1,6 @@
 # Jenkins
 
-## Iniciando um servidor do Jenkins
+# Iniciando um servidor do Jenkins
 
 Para rodar o Jenkins, usamos a imagem **jenkins/jenkins** do DockerHub.
 
@@ -27,7 +27,7 @@ Na tela posterior, instalamos os plugins sugeridos.
 
 Depois, criamos um usuário, até chegarmos na página principal.
 
-## Criando um job no Jenkins
+# Criando um job no Jenkins
 
 Na página principal, podemos clicar em **Create a job**.
 
