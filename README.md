@@ -743,6 +743,34 @@ Quase finalizado... Basta criar o script do deploy e configurar o plugin de ssh 
 
 Verificar pq o comando do Dockerfile do ubuntu quebrou
 
+# Rodando o Docker no Jenkins
+
+Use o seguinte Dockerfile:
+
+```
+FROM jenkins/jenkins
+
+USER root
+
+RUN apt update && apt install -y nano
+
+RUN curl https://get.docker.com/ > dockerinstall && chmod 777 dockerinstall && ./dockerinstall
+
+RUN mkdir -p /home/jenkins/bin/ && chown -R 1000:1000 /home/jenkins 
+
+RUN apt update && apt install -y maven
+     
+USER jenkins
+```
+
+Faça os seguintes bind-mounts
+
+```
+volumes:
+  - /home/azl6/Projects/jenkins/section4/jenkinsbindmount:/var/jenkins_home
+  - /var/run/docker.sock:/var/run/docker.sock
+```
+
 
 
 
