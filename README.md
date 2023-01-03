@@ -2,21 +2,9 @@
 [Iniciando um servidor do Jenkins](#iniciando-um-servidor-do-jenkins) <br>
 [Criando um job no Jenkins](#criando-um-job-no-jenkins) <br>
 [Executando scripts pelo Jenkins](#executando-scripts-pelo-jenkins) <br>
-[Inserindo parâmetros nos comandos](#inserindo-parâmetros-nos-comandos) <br>
-
-**Conta e roles** <br>
-[Permitindo que usuários criem uma conta](#permitindo-que-usuários-criem-uma-conta) <br>
-[Instalando o plugin Role-based Authorization Strategy e o utilizando roles](#instalando-o-plugin-role-based-authorization-strategy-e-o-utilizando-roles) <br>
-[Criando uma role e assignando-a a um usuário](#criando-uma-role-e-assignando-a-a-um-usuário) <br>
-[Criando uma project role](#criando-uma-project-role) <br>
-
-**Plugins** <br>
-[Instalando o plugin de SSH](#instalando-o-plugin-de-ssh) <br>
-[Instalando os plugins necessários para integrar o Jenkins com o Maven e Git](#instalando-os-plugins-necessários-para-integrar-o-jenkins-com-o-maven-e-git) <br>
-[Instalando o plugin de DSL do Jenkins](#instalando-o-plugin-de-dsl-do-jenkins) <br>
-[Instalando plugin do Jenkins Pipeline](#instalando-plugin-do-jenkins-pipeline) <br>
 
 **Secrets, variáveis normais e de ambiente** <br>
+[Inserindo parâmetros nos comandos](#inserindo-parâmetros-nos-comandos) <br>
 [Gerenciando secrets pelo Jenkins](#gerenciando-secrets-pelo-jenkins) <br>
 [Jenkins-defined environment variables](#jenkins-defined-environment-variables) <br>
 [User-defined environment variables](#user-defined-environment-variables) <br>
@@ -44,6 +32,18 @@
 
 **Docker e Jenkins** <br>
 [Rodando o Docker no Jenkins](#rodando-o-docker-no-jenkins) <br>
+
+**Conta e roles** <br>
+[Permitindo que usuários criem uma conta](#permitindo-que-usuários-criem-uma-conta) <br>
+[Instalando o plugin Role-based Authorization Strategy e o utilizando roles](#instalando-o-plugin-role-based-authorization-strategy-e-o-utilizando-roles) <br>
+[Criando uma role e assignando-a a um usuário](#criando-uma-role-e-assignando-a-a-um-usuário) <br>
+[Criando uma project role](#criando-uma-project-role) <br>
+
+**Plugins** <br>
+[Instalando o plugin de SSH](#instalando-o-plugin-de-ssh) <br>
+[Instalando os plugins necessários para integrar o Jenkins com o Maven e Git](#instalando-os-plugins-necessários-para-integrar-o-jenkins-com-o-maven-e-git) <br>
+[Instalando o plugin de DSL do Jenkins](#instalando-o-plugin-de-dsl-do-jenkins) <br>
+[Instalando plugin do Jenkins Pipeline](#instalando-plugin-do-jenkins-pipeline) <br>
 
 **Utilitários** <br>
 [Fazendo backup de um banco MySQL pro S3 pelo Jenkins](#fazendo-backup-de-um-banco-mysql-pro-s3-pelo-jenkins) <br>
