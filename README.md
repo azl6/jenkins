@@ -13,6 +13,7 @@
 [Cron jobs com o Jenkins](#cron-jobs-com-o-jenkins) <br>
 
 **Trigger de jobs** <br>
+[Utilizando ngrok e webhooks para dar trigger na pipeline](#utilizando-ngrok-e-webhooks-para-dar-trigger-na-pipeline) <br>
 [Trigger de jobs sem parâmetros a partir de fontes externas](#trigger-de-jobs-sem-parâmetros-a-partir-de-fontes-externas) <br>
 [Trigger de jobs com parâmetros a partir de fontes externas](#trigger-de-jobs-com-parâmetros-a-partir-de-fontes-externas) <br>
 
@@ -822,6 +823,16 @@ volumes:
   - /home/azl6/Projects/jenkins/section4/jenkinsbindmount:/var/jenkins_home
   - /var/run/docker.sock:/var/run/docker.sock
 ```
+
+# Utilizando ngrok e webhooks para dar trigger na pipeline
+
+Primeiro, instalamos o ngrok para expor o nosso servidor local de Jenkins para a web. Após ter tudo instalado, basta executar
+
+```
+ngrok http <PORTA_JENKINS>
+```
+
+Depois, 
 
 
 
