@@ -824,6 +824,12 @@ volumes:
   - /var/run/docker.sock:/var/run/docker.sock
 ```
 
+Além disso, dar permissão de rwx no arquivo **/var/run/docker.sock**, caso contrário, o Jenkins não conseguirá rodar comandos do Docker, pois terá permission denied.
+
+```
+sudo chmod a+rwx /var/run/docker.sock
+```
+
 # Utilizando ngrok e webhooks para dar trigger na pipeline
 
 Primeiro, instalamos o ngrok para expor o nosso servidor local de Jenkins para a web. Após ter tudo instalado, basta executar
