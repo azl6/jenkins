@@ -866,8 +866,10 @@ Clicamos em **Add Webhook**
 
 No form a seguir, preenchemos as seguintes informações:
 
-**Payload URL**: \<JENKINS_SOCKET>/github-webhooks (se o Jenkins estiver exposto via ngrok, seguir o mesmo princípio)
+**Payload URL**: \<JENKINS_SOCKET>/github-webhook/ (se o Jenkins estiver exposto via ngrok, seguir o mesmo princípio) <BR>
 **Content type**: application/json
+
+Ao salvar, o hook já estará funcionando!
 
 
 
