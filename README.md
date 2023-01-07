@@ -869,27 +869,6 @@ No form a seguir, preenchemos as seguintes informações:
 **Payload URL**: \<JENKINS_SOCKET>/github-webhook/ (se o Jenkins estiver exposto via ngrok, seguir o mesmo princípio) <BR>
 **Content type**: application/json
 
-Ao salvar, o hook já estará funcionando!
+Ao salvar, precisamos dar 1 build manualmente, pois somente aí o hook funcionará.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Pronto!
