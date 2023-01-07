@@ -838,12 +838,36 @@ Primeiro, instalamos o ngrok para expor o nosso servidor local de Jenkins para a
 ngrok http <PORTA_JENKINS>
 ```
 
-Depois, 
+Depois, criamos um projeto no Jenkins.
 
+Na aba **General**, definimos o repositório onde o trigger rodará
 
+![image](https://user-images.githubusercontent.com/80921933/211126542-e9875b89-bd72-4efd-9575-0ef8299b2d4c.png)
 
+Agora, na aba de **Build Triggers**, selecionamos a opção **GitHub hook trigger for GITScm polling**
 
+![image](https://user-images.githubusercontent.com/80921933/211126609-ea39acca-4f06-4c97-b01b-ecbe64386fe1.png)
 
+Finalize as configurações como desejar (se o projeto for uma Pipeline, realize tais configurações, etc...)
+
+Agora, salvamos o projeto, e vamos para o repositório no Github.
+
+Clicamos no botão **Settings**
+
+![image](https://user-images.githubusercontent.com/80921933/211126683-ec55f9c6-4d18-48a2-83fa-95e084f44d3b.png)
+
+Depois, no canto esquerdo, selecionamos a opção **Webhooks**
+
+![image](https://user-images.githubusercontent.com/80921933/211126698-66557ad1-c3aa-42df-8138-7b487d345a54.png)
+
+Clicamos em **Add Webhook**
+
+![image](https://user-images.githubusercontent.com/80921933/211126718-a6355b2e-8132-417e-b4e1-faa814518c65.png)
+
+No form a seguir, preenchemos as seguintes informações:
+
+**Payload URL**: \<JENKINS_SOCKET>/github-webhooks (se o Jenkins estiver exposto via ngrok, seguir o mesmo princípio)
+**Content type**: application/json
 
 
 
