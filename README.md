@@ -902,6 +902,10 @@ Selecionamos a opção **Scan by webhook** e definimos um token (podemos escolhe
 
 ![image](https://user-images.githubusercontent.com/80921933/211131355-7a85357e-e402-4c83-aa57-249965177325.png)
 
-Resumidamente, utilizaremos a URL informada abaixo do token (JENKINS_URL/multibranch-webhook-trigger/invoke?token=TOKEN), e se o TOKEN bater com o informado, a pipeline terá sido "triggerada", em sua respectiva branch.
-
+Resumidamente, utilizaremos a URL informada abaixo do token (**JENKINS_URL/multibranch-webhook-trigger/invoke?token=TOKEN**), e se o TOKEN bater com o informado, a pipeline terá sido "triggerada", em sua respectiva branch.
   
+Após as configurações no Jenkins, basta criarmos 1 (somente 1) Webhook no repositório da aplicação, que manda um request, em formato json, para o seguinte endereço:
+  
+```
+JENKINS_URL/multibranch-webhook-trigger/invoke?token=TOKEN
+```
