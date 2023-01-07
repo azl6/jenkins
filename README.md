@@ -875,7 +875,33 @@ Ao salvar, precisamos dar 1 build manualmente, pois somente aí o hook funcionar
 Pronto!
   
 # Utilizando ngrok e webhooks para dar trigger na pipeline multibranch
-  
 
+Ao criar um projeto no Jenkins, selecionar **Multibranch pipeline**
+
+ADICIONAR IMAGEM
   
+Nas configurações, em **Branch sources**, adicionamos nosso repositório 
+
+![image](https://user-images.githubusercontent.com/80921933/211130691-72fc248a-8318-4a52-b577-ee9324667473.png)
+
+Assumindo que o Jenkinsfile estará na raiz do diretório, o restante das configurações deve estar correto. Damos **Apply** e **Save**.
+
+Ao atualizar a página do projeto, verificamos que foi criado uma pipeline para cada branch
+
+![image](https://user-images.githubusercontent.com/80921933/211130893-1dced654-7fba-422d-b740-14f27e66e629.png)
+
+Para os próximos passos, precisaremos do seguinte plugin:
+
+![image](https://user-images.githubusercontent.com/80921933/211130969-eaa9c851-35fc-492f-8e08-51abcbc30649.png)
+
+Após instalar o plugin, nas configurações do projeto de Multibranch pipeline, teremos a seguinte opção desbloqueada
+
+![image](https://user-images.githubusercontent.com/80921933/211131216-f235b0ad-307f-4379-9778-5ed370224fc2.png)
+
+Selecionamos a opção **Scan by webhook** e definimos um token (podemos escolher o texto dele)
+
+![image](https://user-images.githubusercontent.com/80921933/211131355-7a85357e-e402-4c83-aa57-249965177325.png)
+
+Resumidamente, utilizaremos a URL informada abaixo do token (JENKINS_URL/multibranch-webhook-trigger/invoke?token=TOKEN), e se o TOKEN bater com o informado, a pipeline terá sido "triggerada", em sua respectiva branch.
+
   
