@@ -13,7 +13,8 @@
 [Cron jobs com o Jenkins](#cron-jobs-com-o-jenkins) <br>
 
 **Trigger de jobs** <br>
-[Utilizando ngrok e webhooks para dar trigger na pipeline](#utilizando-ngrok-e-webhooks-para-dar-trigger-na-pipeline) <br>
+[Utilizando ngrok e webhooks para dar trigger na pipeline monobranch](#utilizando-ngrok-e-webhooks-para-dar-trigger-na-pipeline-monobranch) <br>
+[Utilizando ngrok e webhooks para dar trigger na pipeline multibranch](#utilizando-ngrok-e-webhooks-para-dar-trigger-na-pipeline-multibranch) <br>
 [Trigger de jobs sem parâmetros a partir de fontes externas](#trigger-de-jobs-sem-parâmetros-a-partir-de-fontes-externas) <br>
 [Trigger de jobs com parâmetros a partir de fontes externas](#trigger-de-jobs-com-parâmetros-a-partir-de-fontes-externas) <br>
 
@@ -830,7 +831,7 @@ Além disso, dar permissão de rwx no arquivo **/var/run/docker.sock**, caso con
 sudo chmod a+rwx /var/run/docker.sock
 ```
 
-# Utilizando ngrok e webhooks para dar trigger na pipeline
+# Utilizando ngrok e webhooks para dar trigger na pipeline monobranch
 
 Primeiro, instalamos o ngrok para expor o nosso servidor local de Jenkins para a web. Após ter tudo instalado, basta executar
 
@@ -872,3 +873,9 @@ No form a seguir, preenchemos as seguintes informações:
 Ao salvar, precisamos dar 1 build manualmente, pois somente aí o hook funcionará.
 
 Pronto!
+  
+# Utilizando ngrok e webhooks para dar trigger na pipeline multibranch
+  
+
+  
+  
