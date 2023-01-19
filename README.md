@@ -392,7 +392,7 @@ Depois de verificar um e-mail, vamos para a opção **SMTP settings**, e copiamo
 
 Em **Dashboard > Manage Jenkins > Configure System**, colamos o **SMTP endpoint** copiado na opção com o header **Email notification**
 
-![image](https://user-images.githubusercontent.com/80921933/207968780-3dcb12df-4d8c-4f58-bfa1-52e95113707d.png)
+![image](https://user-images.githubusercontent.com/80921933/213566309-62ccf318-1218-4382-a9a4-d861bc3d7811.png)
 
 De volta a AWS, clicamos em **Create SMTP credentials**
 
@@ -409,6 +409,10 @@ Para o campo **SMTP Port**, buscamos na AWS as portas disponibilizadas pelo serv
 ![image](https://user-images.githubusercontent.com/80921933/207970139-15293d3d-d032-4db8-a510-b2d11e0d4741.png)
 
 Para o campo **Reply-to address**, preenchemos nosso e-mail convencional
+
+Com o mesmo e-mail preenchido no **Reply-to address**, preenchemos o campo **System Admin e-mail address** na seção **Jenkins Location**
+
+![image](https://user-images.githubusercontent.com/80921933/213565804-c98a6abe-69b8-43ac-bb06-1304db936438.png)
 
 Ao clicar em **Test configuration**, devemos ver a seguinte mensagem
 
