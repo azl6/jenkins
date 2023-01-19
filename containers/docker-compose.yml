@@ -1,0 +1,33 @@
+version: '3.8'
+
+services:
+
+  jenkins:
+    image: imgjenkins
+    container_name: 'jenkins'
+    build: 
+      context: jenkins_container/
+    volumes:
+      - /home/azl6/Projects/jenkins/section4/jenkinsbindmount:/var/jenkins_home
+      - /var/run/docker.sock:/var/run/docker.sock
+    ports:
+      - 8080:8080
+    networks:
+      - network_jenkins
+    depends_on:
+      - ubuntu-server
+
+  ubuntu-server:
+    image: imgubuntu
+    container_name: 'ubuntu'
+    build:
+      context: ubuntu_container/
+    networks:
+      - network_jenkins
+      
+networks:
+  network_jenkins:
+
+    
+    
+    
