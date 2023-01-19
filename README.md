@@ -783,6 +783,26 @@ Ao rodá-lo, vemos que deu tudo certo
   }
   ```
   
+    - **SSH Agent** - Utilizar SSH na pipeline. Para esse caso, devemos instalar o plugin **SSH Agent**, caso contrário, teremos o seguinte erro:
+    
+    ![image](https://user-images.githubusercontent.com/80921933/213584176-2ef9975a-3d43-417d-9edb-1318228aa913.png)
+
+      
+  ```groovy
+  pipeline {
+      agent any 
+
+      stage('Deploy') { 
+          steps {
+              sshagent(credentials : ['key-to-ec2']) {
+                  sh 'docker run --name fileupload --rm azold6/fileupload-pv-pvc:$BUILD_NUMBER'
+              }
+          }
+      }
+
+  }
+  ```
+  
 # Informações sobre a utilização de um contêiner do Maven para gerar jar
 
 Todos os downloads feitos pelos comandos do Maven são armazenados em **~/.m2**. Isso significa que um bind-mount nessa localidade é uma boa estratégia, já que não precisaremos re-baixar tudo que o Maven necessita toda vez que rodarmos comandos.
