@@ -53,7 +53,8 @@
 [Como clonar um projeto do Github a partir do Jenkins](#como-clonar-um-projeto-do-github-a-partir-do-jenkins) <br>
 [Configurando o Maven no Jenkins](#configurando-o-maven-no-jenkins) <br>
 [Documentando o último artifact jar buildado com sucesso](#documentando-o-último-artifact-jar-buildado-com-sucesso) <br>
-
+[Alterando o idioma do Jenkins para o inglês](#alterando-o-idioma-do-jenkins-para-o-inglês) <br>
+ 
 # Iniciando um servidor do Jenkins
 
 Para rodar o Jenkins, usamos a imagem **jenkins/jenkins** do DockerHub.
@@ -909,3 +910,14 @@ Após as configurações no Jenkins, basta criarmos 1 (somente 1) Webhook no rep
 ```
 JENKINS_URL/multibranch-webhook-trigger/invoke?token=TOKEN
 ```
+
+# Alterando o idioma do Jenkins para o inglês
+
+Instalar o plugin **Locale**
+
+Em **Gerenciar Jenkins**, inserir a seguinte configuração no campo **Locale**
+
+![image](https://user-images.githubusercontent.com/80921933/213534678-61af3be3-20ca-465c-b9fb-b7e548907972.png)
+
+
+
