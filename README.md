@@ -30,7 +30,6 @@
 **Pipelines** <br>
 [Pipeline simples](#pipeline-simples) <br>
 [Comandos na pipeline](#comandos-na-pipeline) <br>
-[Criando pipeline](#criando-pipeline) <br>
 
 **Docker e Jenkins** <br>
 [Rodando o Docker no Jenkins](#rodando-o-docker-no-jenkins) <br>
@@ -806,21 +805,6 @@ Ao rodá-lo, vemos que deu tudo certo
 # Informações sobre a utilização de um contêiner do Maven para gerar jar
 
 Todos os downloads feitos pelos comandos do Maven são armazenados em **~/.m2**. Isso significa que um bind-mount nessa localidade é uma boa estratégia, já que não precisaremos re-baixar tudo que o Maven necessita toda vez que rodarmos comandos.
-
-# Criando pipeline
-
-- Instalar Docker no contêiner do Jenkins
-- Ser capaz de utilizar um contêiner alpine do Maven para realizar o package e test de uma aplicação Java/Maven
-- Automatizar o processo de geração de jar com shell script
-- Automatizar o processo de build de imagem com shell script
-  
-Lembrar:
-
-Usar a env $BUILD_TAG do Jenkins
-
-Quase finalizado... Basta criar o script do deploy e configurar o plugin de ssh no jenkins para rodar um script de deploy em um server ubuntu contêinerizado;;;
-
-Verificar pq o comando do Dockerfile do ubuntu quebrou
 
 # Rodando o Docker no Jenkins
 
